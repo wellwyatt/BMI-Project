@@ -15,7 +15,6 @@ public class Main {
 
         lowNormal = 18.4;
         highNormal = 24.9;
-        highBMI = 25;
         System.out.println("What is your height? (in feet)");
         userFeet = keyboard.nextInt();
 
@@ -31,7 +30,7 @@ public class Main {
         System.out.println("Your BMI is ");
         double BMI = (userWeight * 703) / (userInches * userInches);
         System.out.println
-                (BMI);
+                (BMI+",");
 
         if (BMI >= lowNormal && BMI < highNormal)
             System.out.println(" Your BMI is Normal.");
